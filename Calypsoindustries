@@ -12,7 +12,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 1,
+      "execution_count": null,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
@@ -40,7 +40,591 @@
     },
     {
       "cell_type": "code",
+      "source": [
+        "Module 0  Environment & IonQ Login (run once)\n",
+        "\n",
+        "Module 1  Quantum Atom Engine\n",
+        "           ↓\n",
+        "      Hydrogen (H)\n",
+        "\n",
+        "Module 2  Reuse the same engine\n",
+        "           ↓\n",
+        "      Helium (He)\n",
+        "\n",
+        "Module 3\n",
+        "      Lithium (Li)\n",
+        "\n",
+        "...\n",
+        "\n",
+        "Module N\n",
+        "      Any element in the periodic table"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 141
+        },
+        "id": "XBsEDwLIItff",
+        "outputId": "58949a38-6903-409e-9d14-c928e00d7c1b"
+      },
       "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "IndentationError",
+          "evalue": "unindent does not match any outer indentation level (<tokenize>, line 5)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<tokenize>\"\u001b[0;36m, line \u001b[0;32m5\u001b[0m\n\u001b[0;31m    Hydrogen (H)\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mIndentationError\u001b[0m\u001b[0;31m:\u001b[0m unindent does not match any outer indentation level\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "atom = QuantumAtom(\n",
+        "    symbol=\"H\",\n",
+        "    protons=1,\n",
+        "    neutrons=0,\n",
+        "    electrons=1\n",
+        ")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 335
+        },
+        "id": "SR5Xh23HIxPP",
+        "outputId": "7a2f8c03-6aa2-4f52-9732-3e28d17c2ca7"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'QuantumAtom' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_3142/1933989454.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m atom = QuantumAtom(\n\u001b[0m\u001b[1;32m      2\u001b[0m     \u001b[0msymbol\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m\"H\"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m     \u001b[0mprotons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m     \u001b[0mneutrons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m     \u001b[0melectrons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'QuantumAtom' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "atom = QuantumAtom(\n",
+        "    symbol=\"He\",\n",
+        "    protons=2,\n",
+        "    neutrons=2,\n",
+        "    electrons=2\n",
+        ")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 335
+        },
+        "id": "4EiX2xaiI0SW",
+        "outputId": "6dec191e-677c-4d88-f0d2-cde6d661e2d7"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'QuantumAtom' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_3142/2540103471.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m atom = QuantumAtom(\n\u001b[0m\u001b[1;32m      2\u001b[0m     \u001b[0msymbol\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m\"He\"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m     \u001b[0mprotons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m     \u001b[0mneutrons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m     \u001b[0melectrons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'QuantumAtom' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Element(\n",
+        "    symbol=\"H\",\n",
+        "    Z=1,          # Protons\n",
+        "    electrons=1,\n",
+        "    neutrons=0\n",
+        ")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 352
+        },
+        "id": "EW3pNzWJI2dF",
+        "outputId": "22805c01-bea9-4518-e529-8eff061b3891"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'Element' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_3142/4088065154.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m Element(\n\u001b[0m\u001b[1;32m      2\u001b[0m     \u001b[0msymbol\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m\"H\"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m     \u001b[0mZ\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m,\u001b[0m          \u001b[0;31m# Protons\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m     \u001b[0melectrons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m     \u001b[0mneutrons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'Element' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Element(\n",
+        "    symbol=\"He\",\n",
+        "    Z=2,\n",
+        "    electrons=2,\n",
+        "    neutrons=2\n",
+        ")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 335
+        },
+        "id": "21YsXGJ3I37F",
+        "outputId": "d51de7f9-89cc-47a6-97e6-98f81ac97b6b"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'Element' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_3142/4157210765.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m Element(\n\u001b[0m\u001b[1;32m      2\u001b[0m     \u001b[0msymbol\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m\"He\"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m     \u001b[0mZ\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m     \u001b[0melectrons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m     \u001b[0mneutrons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'Element' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Element(\n",
+        "    symbol=\"Li\",\n",
+        "    Z=3,\n",
+        "    electrons=3,\n",
+        "    neutrons=4\n",
+        ")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 335
+        },
+        "id": "AFTsYZ7VI5mu",
+        "outputId": "7b9bd560-2eb6-4e12-9e70-e40bb0f6580d"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'Element' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_3142/837998616.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m Element(\n\u001b[0m\u001b[1;32m      2\u001b[0m     \u001b[0msymbol\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m\"Li\"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m     \u001b[0mZ\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m3\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m     \u001b[0melectrons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m3\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m     \u001b[0mneutrons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m4\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'Element' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "PERIODIC_TABLE = {\n",
+        "    \"H\":  {\"Z\":1, \"electrons\":1},\n",
+        "    \"He\": {\"Z\":2, \"electrons\":2},\n",
+        "    \"Li\": {\"Z\":3, \"electrons\":3},\n",
+        "    \"Be\": {\"Z\":4, \"electrons\":4},\n",
+        "}"
+      ],
+      "metadata": {
+        "id": "rHs_6q0WI7Jf"
+      },
+      "execution_count": 8,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "run_atom(\"H\")\n",
+        "run_atom(\"He\")\n",
+        "run_atom(\"Li\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 300
+        },
+        "id": "D7IZ1c5iI9Cq",
+        "outputId": "30772b3b-5248-41b2-a7fe-fac4447d5f4c"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'run_atom' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_3142/2602978003.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mrun_atom\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"H\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0mrun_atom\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"He\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0mrun_atom\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Li\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'run_atom' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "{\n",
+        "    \"symbol\": \"C\",\n",
+        "    \"atomic_number\": 6,\n",
+        "    \"electrons\": 6,\n",
+        "    \"electron_configuration\": \"1s2 2s2 2p2\",\n",
+        "    \"mass\": 12.011,\n",
+        "    \"spin\": ...,\n",
+        "    \"charge\": ...\n",
+        "}"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "O_dJTxFxI-X-",
+        "outputId": "e8565fb5-950c-4b7f-bc96-27b71b95c936"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'symbol': 'C',\n",
+              " 'atomic_number': 6,\n",
+              " 'electrons': 6,\n",
+              " 'electron_configuration': '1s2 2s2 2p2',\n",
+              " 'mass': 12.011,\n",
+              " 'spin': Ellipsis,\n",
+              " 'charge': Ellipsis}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Module 0  Environment & IonQ Login (run once)\n",
+        "\n",
+        "Module 1  Quantum Atom Engine\n",
+        "           ↓\n",
+        "      Hydrogen (H)\n",
+        "\n",
+        "Module 2  Reuse the same engine\n",
+        "           ↓\n",
+        "      Helium (He)\n",
+        "\n",
+        "Module 3\n",
+        "      Lithium (Li)\n",
+        "\n",
+        "...\n",
+        "\n",
+        "Module N\n",
+        "      Any element in the periodic table"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 141
+        },
+        "id": "64oj_QyuOMzG",
+        "outputId": "5d01d478-c3ec-4b6f-b142-47279cf56cc3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "IndentationError",
+          "evalue": "unindent does not match any outer indentation level (<tokenize>, line 5)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<tokenize>\"\u001b[0;36m, line \u001b[0;32m5\u001b[0m\n\u001b[0;31m    Hydrogen (H)\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mIndentationError\u001b[0m\u001b[0;31m:\u001b[0m unindent does not match any outer indentation level\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "atom = QuantumAtom(\n",
+        "    symbol=\"H\",\n",
+        "    protons=1,\n",
+        "    neutrons=0,\n",
+        "    electrons=1\n",
+        ")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 335
+        },
+        "id": "xjITkKQrOS9U",
+        "outputId": "95ddda58-6bc0-4d4c-e1b8-df609623ce27"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'QuantumAtom' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_1294/1933989454.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m atom = QuantumAtom(\n\u001b[0m\u001b[1;32m      2\u001b[0m     \u001b[0msymbol\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m\"H\"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m     \u001b[0mprotons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m     \u001b[0mneutrons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m     \u001b[0melectrons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'QuantumAtom' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "atom = QuantumAtom(\n",
+        "    symbol=\"He\",\n",
+        "    protons=2,\n",
+        "    neutrons=2,\n",
+        "    electrons=2\n",
+        ")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 335
+        },
+        "id": "2SnIMAXQOVzM",
+        "outputId": "b573f6af-72f3-4fd4-b569-3000b9456427"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'QuantumAtom' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_1294/2540103471.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m atom = QuantumAtom(\n\u001b[0m\u001b[1;32m      2\u001b[0m     \u001b[0msymbol\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m\"He\"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m     \u001b[0mprotons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m     \u001b[0mneutrons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m     \u001b[0melectrons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'QuantumAtom' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Element(\n",
+        "    symbol=\"H\",\n",
+        "    Z=1,          # Protons\n",
+        "    electrons=1,\n",
+        "    neutrons=0\n",
+        ")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 352
+        },
+        "id": "VPLT-Jg9OYEV",
+        "outputId": "0a61c6d3-2761-4268-f76a-907350d69d1c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'Element' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_1294/4088065154.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m Element(\n\u001b[0m\u001b[1;32m      2\u001b[0m     \u001b[0msymbol\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m\"H\"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m     \u001b[0mZ\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m,\u001b[0m          \u001b[0;31m# Protons\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m     \u001b[0melectrons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m     \u001b[0mneutrons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'Element' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Element(\n",
+        "    symbol=\"He\",\n",
+        "    Z=2,\n",
+        "    electrons=2,\n",
+        "    neutrons=2\n",
+        ")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 335
+        },
+        "id": "Y9sPZejyObJK",
+        "outputId": "2273f1b7-bf76-4a01-9098-79ccb1feefbf"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'Element' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_1294/4157210765.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m Element(\n\u001b[0m\u001b[1;32m      2\u001b[0m     \u001b[0msymbol\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m\"He\"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m     \u001b[0mZ\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m     \u001b[0melectrons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m     \u001b[0mneutrons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'Element' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Element(\n",
+        "    symbol=\"Li\",\n",
+        "    Z=3,\n",
+        "    electrons=3,\n",
+        "    neutrons=4\n",
+        ")"
+      ],
+      "metadata": {
+        "id": "PNSbhJvyOdLS",
+        "outputId": "a13e6a72-e045-493d-b410-f68c4a150433",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 335
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'Element' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_1294/837998616.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m Element(\n\u001b[0m\u001b[1;32m      2\u001b[0m     \u001b[0msymbol\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m\"Li\"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m     \u001b[0mZ\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m3\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m     \u001b[0melectrons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m3\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m     \u001b[0mneutrons\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m4\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'Element' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "PERIODIC_TABLE = {\n",
+        "    \"H\":  {\"Z\":1, \"electrons\":1},\n",
+        "    \"He\": {\"Z\":2, \"electrons\":2},\n",
+        "    \"Li\": {\"Z\":3, \"electrons\":3},\n",
+        "    \"Be\": {\"Z\":4, \"electrons\":4},\n",
+        "}"
+      ],
+      "metadata": {
+        "id": "qrUROk4ROfBG"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "run_atom(\"H\")\n",
+        "run_atom(\"He\")\n",
+        "run_atom(\"Li\")"
+      ],
+      "metadata": {
+        "id": "Xtym1QD8Og8s",
+        "outputId": "7702ee2b-9a57-48e3-bad8-9f55c89fddc3",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 300
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'run_atom' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_1294/2602978003.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mrun_atom\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"H\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0mrun_atom\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"He\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0mrun_atom\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Li\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'run_atom' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "{\n",
+        "    \"symbol\": \"C\",\n",
+        "    \"atomic_number\": 6,\n",
+        "    \"electrons\": 6,\n",
+        "    \"electron_configuration\": \"1s2 2s2 2p2\",\n",
+        "    \"mass\": 12.011,\n",
+        "    \"spin\": ...,\n",
+        "    \"charge\": ...\n",
+        "}"
+      ],
+      "metadata": {
+        "id": "axCYDTx6OiMn",
+        "outputId": "97126bb2-a30e-40de-a135-448c0d0fbcf9",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'symbol': 'C',\n",
+              " 'atomic_number': 6,\n",
+              " 'electrons': 6,\n",
+              " 'electron_configuration': '1s2 2s2 2p2',\n",
+              " 'mass': 12.011,\n",
+              " 'spin': Ellipsis,\n",
+              " 'charge': Ellipsis}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
@@ -76,7 +660,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 3,
+      "execution_count": null,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
@@ -146,7 +730,7 @@
         "id": "YLD4_d6WAXfH",
         "outputId": "f2dd99b9-182b-4a90-f632-b9e6843cdf09"
       },
-      "execution_count": 4,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -187,7 +771,7 @@
       "metadata": {
         "id": "VWXAXOd_DftF"
       },
-      "execution_count": 5,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -212,7 +796,7 @@
         "id": "GoMO5hZ-DnCb",
         "outputId": "ae5a5f4f-5db4-4f41-c4b7-5e9b00f91325"
       },
-      "execution_count": 6,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -238,7 +822,7 @@
         "id": "gZ-F5NCmDuu9",
         "outputId": "63cf5fd5-a91d-4cec-e12c-57bf69dd5d5d"
       },
-      "execution_count": 7,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "error",
@@ -12572,7 +13156,7 @@
       "provenance": [],
       "selectedAiContext": "default",
       "mount_file_id": "19zOSKu3blR9hPNPYPWImb7-ANoBQ2GUV",
-      "authorship_tag": "ABX9TyNy/ccukE5od2IQg4cAKOpH",
+      "authorship_tag": "ABX9TyPCgk3ly1IzOzsJyFzLvoOm",
       "include_colab_link": true
     },
     "kernelspec": {
